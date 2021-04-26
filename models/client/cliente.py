@@ -2,8 +2,8 @@ class Client:
 
     def __init__(self, name, cpf):
 
-        self.__name = name
-        self.__cpf = cpf
+        self.name = name
+        self.cpf = cpf
         self.__address = None
         self.__contacts = []
 
@@ -26,3 +26,7 @@ class Client:
 
     def addContact(self, contact):
         self.__contacts.append(contact)
+
+    def listContacts(self):
+        for contact in self.__contacts:
+            return contact
