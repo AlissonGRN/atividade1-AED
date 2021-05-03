@@ -19,7 +19,7 @@ class Sistema():
             self.menuPrincipal()
             opcao = input('Digite uma opção: ')
             if opcao == '1':
-                self.__controladorCliente.iniciar()
+                self.__controladorCliente.iniciarSistema()
             elif opcao == '2':
                 pass
             elif opcao == '3':

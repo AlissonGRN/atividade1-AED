@@ -36,7 +36,7 @@ def ControladorCliente():
             if cliente.cpf == cpfCliente:
                 print(f'{cliente.nome} - {cliente.cpf}')
 
-    def iniciar(self):
+    def iniciarSistema(self):
         while True:
             self.menu()
             opcao = input('Digite uma opção: ')
