@@ -1,10 +1,12 @@
 from modelos.cliente.controlador import ControladorCliente
+from modelos.venda.controlador import controladorVenda
 
 
 class Sistema():
 
     def __init__(self):
         self.controladorCliente = ControladorCliente()
+        self.controladorVenda = controladorVenda()
 
     def menuPrincipal(self):
         print('-=-' * 5)
@@ -24,7 +26,7 @@ class Sistema():
             elif opcao == '2':
                 pass
             elif opcao == '3':
-                pass
+                self.controladorVenda.iniciarSistema()
             elif opcao == '0':
                 input('Saindo do sistema - digite enter')
                 return

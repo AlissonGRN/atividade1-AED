@@ -15,4 +15,4 @@ class Cliente():
         return False
 
     def addContato(self, contato):
-        self.contato.append(contato)
+        self.contatos.append(contato)
