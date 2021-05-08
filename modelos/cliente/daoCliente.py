@@ -7,7 +7,7 @@ class DaoCliente():
         for cliente in self.clientes:
             if cliente.cpf == cpf:
                 return cliente
-        return none
+        return None
 
     def salvarCliente(self, cliente):
         if self.buscarCliente(cliente.cpf) is None:

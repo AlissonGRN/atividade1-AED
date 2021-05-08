@@ -2,7 +2,7 @@ from modelos.cliente.cliente import Cliente
 from modelos.cliente.daoCliente import DaoCliente
 
 
-def ControladorCliente():
+class ControladorCliente():
 
     def __init__(self):
         self.__dao = DaoCliente()

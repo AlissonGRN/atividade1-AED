@@ -4,7 +4,7 @@ from modelos.cliente.controlador import ControladorCliente
 class Sistema():
 
     def __init__(self):
-        self.__controladorCliente = ControladorCliente()
+        self.controladorCliente = ControladorCliente()
 
     def menuPrincipal(self):
         print('-=-' * 5)
@@ -19,7 +19,8 @@ class Sistema():
             self.menuPrincipal()
             opcao = input('Digite uma opção: ')
             if opcao == '1':
-                self.__controladorCliente.iniciarSistema()
+                self.controladorCliente.iniciarSistema()
+
             elif opcao == '2':
                 pass
             elif opcao == '3':
