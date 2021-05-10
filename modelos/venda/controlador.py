@@ -4,7 +4,7 @@ from modelos.cliente.daoCliente import DaoCliente
 from modelos.produto.produto import Produto
 
 
-class controladorVenda():
+class ControladorVenda():
 
     def __init__(self):
         self.__daoVenda = DaoVenda()

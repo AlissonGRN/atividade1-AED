@@ -1,12 +1,14 @@
 from modelos.cliente.controlador import ControladorCliente
-from modelos.venda.controlador import controladorVenda
+from modelos.venda.controlador import ControladorVenda
+from modelos.produto.controlador import ControladorProduto
 
 
 class Sistema():
 
     def __init__(self):
         self.controladorCliente = ControladorCliente()
-        self.controladorVenda = controladorVenda()
+        self.controladorVenda = ControladorVenda()
+        self.controladorProduto = ControladorProduto()
 
     def menuPrincipal(self):
         print('-=-' * 5)
@@ -24,7 +26,7 @@ class Sistema():
                 self.controladorCliente.iniciarSistema()
 
             elif opcao == '2':
-                pass
+                self.controladorProduto.iniciarSistema()
             elif opcao == '3':
                 self.controladorVenda.iniciarSistema()
             elif opcao == '0':
